@@ -1,11 +1,6 @@
 const productCard = document.getElementById('productModal')
 const techCard = document.getElementById('techModal')
 
-const loadPage = () => {
-    productCard.style.display = 'none'
-    techCard.style.display = 'none'
-
-}
 
 const ShowProductModal = () => {
     if(techCard.style.display === 'flex'){

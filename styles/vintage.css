@@ -5,8 +5,14 @@
 	padding: 50px 2%;
 }
 
-.rolex{
-  font-size: 35px;
+body {
+	font-family: "GT Walsheim Pro";
+	font-weight: normal;
+	font-style: normal;
+}
+
+.rolex {
+	font-size: 35px;
 }
 
 .rolexcrd {
@@ -17,7 +23,7 @@
 .rolexitem {
 	background-color: whitesmoke;
 	border: 2px solid rgb(190, 190, 190);
-	width:  90%;
+	width: 90%;
 	height: max-content;
 	border-radius: 10px;
 	margin: 15px 0px;

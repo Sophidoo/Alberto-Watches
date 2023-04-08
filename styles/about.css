@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Roboto:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutHero{
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+.aboutHero .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 4px;
+}
+.aboutHero .heading h1{
+    font-weight: 500;
+    font-size: 40px;
+}
+.aboutHero .heading p{
+    width: 55%;
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+}
+.stat{
+    /* background-image: url('../images/mature-clockmaster-is-fixing-old-watch-customer-his-busy-repairing-workshop.jpg'); */
+    background-size: cover;
+    background-position: bottom;
+
+}
+.statWrapper{
+    background-color: rgba(11, 11, 11, 0);
+    /* padding: 30px; */
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3%;
+}
+.statCard{
+    width: 31.3%;
+    /* background-color: rgba(19, 19, 19, 0.686); */
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(227, 227, 227);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 15px;
+    padding: 40px 30px;
+    backdrop-filter: blur(2px);
+    
+}
+.statCard h1{
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+}
+.statCard h3{
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+}
+.statCard p{
+    color: rgb(74, 74, 74);
+}
+.valuesWrapper{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* background-color: white; */
+    align-items: center;
+}
+.valuesHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    width: 60%;
+}
+.valuesHeading p:nth-child(1){
+    color: blue;
+}
+.valuesHeading h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+.valuesHeading p{
+    color: rgb(68, 68, 68);
+    margin-top: 5px;
+}
+.valuesCardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3%;
+    row-gap: 30px;
+    margin-top: 20px;
+}
+.valuesCard{
+    width: 31.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(233, 233, 233);
+    border-radius: 20px;
+    padding: 30px;
+}
+.valuesCard span{
+    font-size: 40px;
+}
+.valuesCard svg{
+    font-size: 30px;
+    color: blue;
+}
+.valuesCard h3{
+    font-size: 17px;
+    font-weight: 500;
+}
+.valuesCard p{
+    font-size: 14px;
+    /* margin-top: 8px; */
+    color: rgb(83, 83, 83);
+}
+.teamWrapper{
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+}
+.teamHeader{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.teamHeader h2{
+    font-size: 33px;
+}
+.teamCardWrapper{
+    display: flex;
+    column-gap: 5%;
+    justify-content: center;
+    /* width: 55%; */
+}
+.teamCard{
+    width: fit-content;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.teamCard img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+.teamCardContent{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.teamCardContent h3{
+    font-size: 17px;
+}
+.teamCardContent p{
+    font-size: 14px;
+}
+@media(max-width: 1300px){
+    .aboutHero .heading p{
+        width: 70%;
+    }
+    .valuesHeading{
+        width: 80%;
+    }
+    .statCard{
+        padding: 30px 20px;
+    }
+    
+    .teamCardWrapper{
+        width: 100%;
+    }
+    .teamWrapper{
+        padding: 80px 0%;
+    }
+}
+@media(max-width: 1000px){
+    .aboutHero .heading p{
+        width: 80%;
+        font-size: 14px;
+    }
+    .aboutHero .heading h1{
+        font-size: 38px;
+    }
+    .valuesHeading{
+        width: 80%;
+    }
+    .statCard{
+        padding: 30px 20px;
+        row-gap: 10px;
+    }
+    .statCard h1{
+        font-size: 35px;
+    }
+    .statCard p:first-child{
+        font-size: 14.5px;
+    }
+    .statCard p:last-child{
+        font-size: 14px;
+    }
+    .valuesHeading h2{
+        font-size: 30px;
+    }
+    .valuesHeading p{
+        font-size: 14px;
+    }
+    .valuesCard{
+        padding: 30px 15px;
+    }
+    .valuesCard h3{
+        font-size: 16px;
+    }
+    .valuesCard p{
+        font-size: 14px;
+    }
+    .teamCardWrapper{
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 3%;
+    }
+    .teamCard{width: 31.3%;}
+    .teamCard img{
+        width: 100%;
+        height: 200px;
+    }
+    .teamHeader h2{
+        font-size: 28px;
+    }
+}
+@media(max-width: 750px){
+    .aboutHero .heading p{
+        width: 100%;
+    }
+    .aboutHero .heading h1{
+        font-size: 35px;
+    }
+    .statWrapper{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .statCard{
+        width: 48.5%;
+    }
+    .statCard h1{
+        font-size: 32px;
+    }
+    .statCard:last-child{
+        width: 100%;
+    }
+    .valuesHeading h2{
+        font-size: 28px;
+    }
+    .valuesCardWrapper{
+        row-gap: 20px;
+    }
+    .valuesCard{
+        width: 48.5%;
+    }
+    .teamCardWrapper{
+        width: 100%;
+        row-gap: 30px;
+        column-gap: 3%;
+    }
+    .teamCard{
+        width:47%;
+    }
+}
+@media(max-width: 600px){
+    .valuesHeading{
+        width: 100%;
+    }
+    .statCard{
+        width: 100%;
+    }
+    .aboutHero .heading h1{
+        font-size: 30px;
+    }
+    .valuesCard{
+        width: 100%;
+    }
+    .valuesHeading h2{
+        font-size: 25px;
+    }
+    .statWrapper{
+        padding: 10px;
+        row-gap: 15px;
+    }
+    .statCard{
+        padding: 20px 10px;
+        row-gap: 6px;
+    }
+    .statCard h1{
+        font-size: 32px;
+    }
+    .teamCard{
+        width: 100%;
+    }
+    .teamCard img{
+        height: 250px;
+    }
+    .teamCard h3{
+        font-size: 15px;
+    }
+    .teamCardContent{
+        padding: 0px 10px;
+    }
+}
+@media(max-width: 400px){
+    .aboutHero .heading h1{
+        font-size: 25px;
+    }
+    .aboutHero .heading p{
+        font-size: 13px;
+    }
+    .statCard h1{
+        font-size: 28px;
+    }
+    .statCard p{
+        font-size: 15px;
+    }
+    .valuesHeading h2{
+        font-size: 23px;
+    }
+    .valuesHeading p{
+        font-size: 13px;
+    }
+    .valuesCard{
+        padding: 20px 10px;
+        row-gap: 10px;
+    }
+    .valuesCard h3{
+        font-size: 15px;
+    }
+    .valuesCard p{
+        font-size: 13px;
+    }
+    .teamCardWrapper{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .teamCard {
+        width: 100%;
+    }
+    .teamCard img{
+        height:250px;
+    }
+    .teamCard h3{
+        font-size: 15px;
+    }
+    .teamCardContent{
+        padding: 0px 10px;
+    }
+    
+    .teamHeader h2{
+        font-size: 26px;
+    }
+    .teamCard p{
+        font-size: 13.5px;
+    }
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Roboto:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero{
+    display: flex;
+}
+.left{
+    /* height: 0vh; */
+    background-color: white;
+    margin-bottom: 0px;
+    padding: 80px 60px;
+    padding-left: 4%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.wrapper{
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+}
+.wrapper svg{
+    font-size: 26px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 80%;
+}
+.info h3{
+    font-size: 17px;
+}
+.info p{
+    font-size: 14px;
+    color: rgb(132, 132, 132);
+}
+.right{
+    background-color: whitesmoke;
+    width: 75%;
+    padding: 80px 150px;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.header h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+.header p{
+    font-size: 15px;
+    color: rgb(132, 132, 132);
+}
+footer{
+    margin-top: 0px;
+}
+.right form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 70%;
+}
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.inputWrapper label{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+}
+.inputWrapper input{
+    padding: 10px 18px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: white;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+}
+.inputWrapper input:focus{
+    border: 1px solid blue;
+}
+.inputWrapper input::placeholder{
+    color: gray;
+    font-size: 13px;
+}
+.inputWrapper textarea::placeholder{
+    color: gray;
+    background-color: white;
+    font-size: 13px;
+}
+.inputWrapper textarea:focus{
+    border: 1px solid blue;
+}
+.inputWrapper textarea{
+    padding: 10px 18px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: white;
+    outline: none;
+    border-radius: 8px;
+    resize: vertical;
+}
+.right button{
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(62, 75, 199);
+    border: none;
+    border-radius: 8px;
+}
+.right button:hover{
+    background-color: rgb(35, 48, 173);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+
+@media(max-width: 1300px){
+    .right form{
+        width: 80%;
+    }
+    nav{
+        padding: 25px 50px;
+    }
+    .left{
+        padding: 80px 50px;
+        padding-left: 4%;
+    }
+    .right{
+        padding: 80px 100px;
+        padding-right: 4%;
+    }
+    
+}
+@media(max-width: 1000px){
+    .wrapper img{
+        width: 20px;
+        height: 20px;
+    }
+    .info{
+        width: 100%;
+    }
+    .info h3{
+        font-size: 16px;
+    }
+    .info p{
+        font-size: 13px;
+    }
+    .right{
+        padding: 80px 60px;
+        padding-right: 4%;
+    }
+    .right form{
+        width: 100%;
+        
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header p{
+        font-size: 13.5px;
+    }
+    .inputWrapper label{
+        font-size: 13.5px;
+    }
+    .inputWrapper input{
+        font-size: 13.5px;
+        padding: 10px 13px;
+    }
+    .inputWrapper textarea{
+        font-size: 13.5px;
+        padding: 10px 13px;
+        height: 100px;
+    }
+    .left{
+        padding: 80px 30px;
+        width: 30%;
+        padding-left: 4%;
+    }
+}
+@media(max-width: 750px){
+    .right{
+        width: 70%;
+        padding: 80px 50px;
+        padding-right: 4%;
+    }
+    .header h1{
+        font-size: 28px;
+    }
+}
+@media(max-width: 600px){
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        padding: 80px 4%;
+    }
+    .header{
+        align-items: center;
+        text-align: center;
+        /* margin-bottom: 20px; */
+    }
+}
+@media(max-width: 500px){
+    .right{
+        padding: 80px 20px;
+    }
+    .header h1{
+        font-size: 27px;
+    }
+}

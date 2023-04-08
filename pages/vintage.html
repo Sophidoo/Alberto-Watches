@@ -1,0 +1,160 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/index.css" />
+		<link rel="stylesheet" href="../styles/vintage.css" />
+		<title>Product</title>
+	</head>
+	<body>
+		<nav onmouseout="hideAll()">
+			<p>logo</p>
+			<ul>
+				<li>Home</li>
+				<li>About Us</li>
+				<li onmouseover="ShowProductModal()"
+					>Products
+					<div
+						class="productModal"
+						id="productModal"
+						onmouseout="hideProductModal()"
+					>
+						<p>Vintage</p>
+						<p>Luxury</p>
+						<p>Smart Watches</p>
+					</div>
+				</li>
+				<li onmouseover="ShowTechModal()"
+					>Technology
+					<div class="techModal" id="techModal" onmouseout="hideTechModal()">
+						<p>Nanotechnology</p>
+						<p>Luxury</p>
+						<p>Smart Watches</p>
+					</div>
+				</li>
+				<li>Store Locator</li>
+				<li>Site Map</li>
+				<li>Gallery</li>
+				<li>Support</li>
+			</ul>
+		</nav>
+
+		<section>
+			<div class="vintagecont">
+				<div class="rolexcont">
+					<h1 class="rolex">Rolex</h1>
+					<div class="rolexcrd">
+						<div class="rolexitem">
+							<img src="../images/Vintage-Rolex-Watch.webp" alt="" />
+							<h3>50's Swiss Wittnauer Chronograph </h3>
+							<p class="description"
+								>Late 1950's Swiss Wittnauer Chronograph. Original multicolored
+								dial looks fantastic. Applied markers and numerals. Great
+								hands.35.5mm heavy all steel case with a screw back is in
+								excellent condition.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img src="../images/rolexpercision.webp" alt="" />
+							<h3>1960's Enicar Chronograph Valjoux </h3>
+							<p class="description"
+								>1960's Swiss Enicar Chronograph. Original matte black colored
+								dial looks fantastic. Chrome applied markers. Dial is perfect.
+								Sharp looking matching hands. Large 38mm all steel case with a
+								heavy screw back.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/_1cD5VRdT7qeBgIRbTnZ0Mm2rrobJHl_yMCWM36Shwc/rs:fit:664:720:1/g:ce/aHR0cHM6Ly8xLmJw/LmJsb2dzcG90LmNv/bS8tVmsxR2Q0UzBE/RzQvVXBSQkJwS1d6/akkvQUFBQUFBQUFE/OXMvMVBUX0NJbmNV/Z2cvczE2MDAvVmlu/dGFnZS1Sb2xleC13/YXRjaGVzLVVLLUNv/bGxlY3Rpb24tZm9y/LU1lbi1GYXNoaW9u/KDMpLmpwZw"
+								alt=""
+							/>
+							<h3>Unique LeCoultre V&C Mystery Diamond Dial 14kt</h3>
+							<p class="description"
+								>60's LeCoultre Mystery Dial. Original silver tone dial with
+								thin chrome markers. Dial showing some unique aging.
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/gvnurdGDavPeNAHmcgAYhg8N4o8mF-6PHBbIshgjrMk/rs:fit:1024:683:1/g:ce/aHR0cHM6Ly93cC1h/d3MtbWVkaWEuczMt/YWNjZWxlcmF0ZS5h/bWF6b25hd3MuY29t/LzIwMTkvMDUvR1dB/OV9sb3QtNjgtMTAy/NHg2ODMuanBn"
+								alt=""
+							/>
+							<h3>1961 Hamilton K-475 Asymmetrical Automatic</h3>
+							<p class="description"
+								>Extremely hard to find Hamilton K-475. This model was produced
+								in 1960 and sold in 1961 with only 1300 in production. One of
+								the coolest & unique Hamilton automatics ever produced.
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/2k0G1hElzQSDd6Bc0O4eYw2l6_HXC9QNDeyl_AZd1js/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tYW5k/YndhdGNoZXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzEyL0lNR18wMzM5/LmpwZw"
+								alt=""
+							/>
+							<h3>30's Gruen Techni-Quadron Dr's Watch </h3>
+							<p class="description"
+								>1930’s hard to find Gruen Doctor’s watch. Unique designed duo
+								registers dial. The larger second register allowed a doctor to
+								see the seconds easier while taking a pulse. Original dial looks
+								awesome.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/-x7MG3nR2aopu6tzGCZSdFQeE0Ck20OJmNV0U4-9LEk/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/a2FsbWFyYW50aXF1/ZXMuY29tLmF1L3dw/LWNvbnRlbnQvdXBs/b2Fkcy9yb2xleC1w/cmVjaXNpb24tNzg0/Ni0xLmpwZw"
+								alt=""
+							/>
+							<h3>1967 Bulova Astronaut 214 Accutron </h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corporis alias, consectetur iste nesciunt illo ipsum ad tempora
+								molestias.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/6Y7VgX_keUKpl4S1qs7rc-knotbdNuG4N6AjV8UtJ1o/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/Ym9ic3dhdGNoZXMu/Y29tL3JvbGV4LWJs/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTQvMDEvdmludGFn/ZS1yb2xleC1zdWJt/YXJpbmVyLTE2ODAu/anBn"
+								alt=""
+							/>
+							<h3>30's Gruen Techni-Quadron Dr's Watch</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Minima unde fugiat iste ad sed, iure, tempora laboriosam, nobis
+								adipisci cum aspernatur beatae ducimus maiores quaerat!.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/_z-THissQ0IXcUdH48wyFARbr5-tQ8IvbL0YsaovdZM/rs:fit:1200:1000:1/g:ce/aHR0cHM6Ly95b3Vy/YXZlcmFnZWd1eXN0/eWxlLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNy8xMC9D/b3B5LW9mLVJvbGV4/X1N1Ym1hcmluZXJf/MTY4MF81RDNfMTg5/OC1FZGl0LmpwZw"
+								alt=""
+							/>
+							<h3>50's Swiss Wittnauer Chronograph </h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Molestias ipsum officiis enim ratione aperiam illo tempora
+								assumenda laudantium, sapiente doloribus. Suscipit quam veniam
+								provident laboriosam.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>

@@ -1,8 +1,13 @@
 /** @format */
 
+.vintageitems {
+	padding: 50px 2%;
+}
+
 .vintagecont {
 	width: 100%;
-	padding: 50px 2%;
+	
+	display: none;
 }
 
 body {

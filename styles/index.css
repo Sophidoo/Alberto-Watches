@@ -1,4 +1,4 @@
-
+/** @format */
 
 * {
 	margin: 0px;
@@ -6,12 +6,10 @@
 	box-sizing: border-box;
 }
 
-
-
 body {
 	background-color: whitesmoke;
-	font-family: "GT Walsheim Pro";
-	font-weight: normal;
+	font-family: "GT Walsheim Pro Ultra";
+	font-weight: 800;
 	font-style: normal;
 }
 

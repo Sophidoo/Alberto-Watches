@@ -8,10 +8,14 @@
 
 body {
 	background-color: whitesmoke;
-	font-family: "GT Walsheim Pro Ultra";
-	font-weight: 800;
-	font-style: normal;
+	font-family: 'GT Walsheim Pro';
 }
+
+/* .your-style {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 300;
+    font-style: normal;
+} */
 
 nav {
 	background-color: white;

@@ -35,10 +35,21 @@ nav ul {
 	column-gap: 25px;
 }
 nav ul li {
-	font-size: 14px;
+	font-size: 15px;
 	position: relative;
 }
 nav ul li:hover {
+	color: rgb(2, 153, 213);
+	cursor: pointer;
+	transition: 500ms;
+}
+nav ul a {
+	font-size: 15px;
+	position: relative;
+    text-decoration: none;
+    color: black;
+}
+nav ul a:hover {
 	color: rgb(2, 153, 213);
 	cursor: pointer;
 	transition: 500ms;

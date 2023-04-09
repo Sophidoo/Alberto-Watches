@@ -10,6 +10,26 @@ app.config(function ($routeProvider) {
         templateUrl: '../pages/about.html',
         controller: 'aboutController'
         }).
+        when('/contact', {
+        templateUrl: '../pages/contact.html',
+        controller: 'contactController'
+        }).
+        when('/product/vintage', {
+        templateUrl: '../pages/vintage.html',
+        controller: 'productController'
+        }).
+        when('/product/luxury', {
+        templateUrl: '../pages/vintage.html',
+        controller: 'productController'
+        }).
+        when('/product/smartwatches', {
+        templateUrl: '../pages/vintage.html',
+        controller: 'productController'
+        }).
+        when('/product/nanotech', {
+        templateUrl: '../pages/vintage.html',
+        controller: 'productController'
+        }).
         otherwise({
             redirectTo: '/'
         });
@@ -19,6 +39,9 @@ app.controller('homeController', function($scope){
     $scope.message="hello from first controlles"
 })
 app.controller('aboutController', function($scope){
+    $scope.message="hello from first controlles"
+})
+app.controller('contactController', function($scope){
     $scope.message="hello from first controlles"
 })
 

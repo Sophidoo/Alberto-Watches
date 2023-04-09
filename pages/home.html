@@ -11,7 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
 </head>
 <body>
-    {{message}}
     <nav onmouseout="hideAll()">
         <p>logo</p>
         <ul>
@@ -19,22 +18,22 @@
             <a href="#!/about">About Us</a>
             <li onmouseover="ShowProductModal()">Products
                 <div class="productModal" id="productModal" onmouseout="hideProductModal()">
-                    <p>Vintage</p>
-                    <p>Luxury</p>
-                    <p>Smart Watches</p>
+                    <a href="#!/product/vintage">Vintage</a>
+                    <a href="#!/product/luxury">Luxury</a>
+                    <a href="#!/product/smartwatches">Smart Watches</a>
                 </div>
             </li>
             <li onmouseover="ShowTechModal()">Technology
                 <div class="techModal" id="techModal" onmouseout="hideTechModal()">
-                    <p>Nanotechnology</p>
-                    <p>Luxury</p>
-                    <p>Smart Watches</p>
+                    <a href="#!/product/nanotech">Nanotechnology</a>
+                    <a href="#!/product/smartwatches">Luxury</a>
+                    <a href="#!/product/smartwatches">Smart Watches</a>
                 </div>
             </li>
             <li>Store Locator</li>
             <li>Site Map</li>
             <li>Gallery</li>
-            <li>Support</li>
+            <a href="#!/contact">Support</a>
         </ul>
     </nav>
 
@@ -43,11 +42,6 @@
 
 
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> -->
-    <!-- <script>
-        
-
-    </script> -->
     <script src="../js/index.js"></script>
 </body>
 </html>

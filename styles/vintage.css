@@ -1,12 +1,11 @@
 /** @format */
 
 .vintageitems {
-	padding: 50px 10%;
+	padding: 50px 2%;
 }
 
 .vintagecont {
 	width: 100%;
-	
 	display: none;
 }
 
@@ -14,6 +13,7 @@ body {
 	font-family: "GT Walsheim Pro";
 	font-weight: normal;
 	font-style: normal;
+	background-color: rgb(245, 244, 244);
 }
 
 .rolex {
@@ -22,13 +22,14 @@ body {
 
 .rolexcrd {
 	display: grid;
+	column-gap: 10px;
 	grid-template-columns: repeat(4, 1fr);
 }
 
 .rolexitem {
 	background-color: whitesmoke;
 	border: 2px solid rgb(190, 190, 190);
-	width: 90%;
+	width: 100%;
 	height: max-content;
 	border-radius: 10px;
 	margin: 15px 0px;
@@ -63,4 +64,63 @@ body {
 
 .guccicont {
 	margin-top: 50px;
+}
+
+.modal {
+	display: block;
+}
+
+.modalitems {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.modal-content {
+	width: 70%;
+	height: 400px;
+	background-color: rgb(253, 253, 253);
+	border-radius: 10px;
+	display: flex;
+	gap: 3rem;
+}
+
+.modalleft {
+	width: 35%;
+	height: inherit;
+}
+
+.modalleft img {
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.modalright {
+	width: 65%;
+	padding: 10px 20px;
+}
+
+.modalright h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+	width: 100%;
+}
+
+.productdesc {
+	padding-top: 20px;
+	font-size: 17px;
+}
+
+.technology {
+	font-size: 14px;
+	color: rgb(126, 126, 126);
+	padding-top: 20px;
+}
+
+.technology span {
+	color: rgb(46, 126, 63);
+	font-size: 16px;
 }

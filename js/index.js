@@ -14,19 +14,7 @@ app.config(function ($routeProvider) {
         templateUrl: '../pages/contact.html',
         controller: 'contactController'
         }).
-        when('/product/vintage', {
-        templateUrl: '../pages/vintage.html',
-        controller: 'productController'
-        }).
-        when('/product/luxury', {
-        templateUrl: '../pages/vintage.html',
-        controller: 'productController'
-        }).
-        when('/product/smartwatches', {
-        templateUrl: '../pages/vintage.html',
-        controller: 'productController'
-        }).
-        when('/product/nanotech', {
+        when('/product', {
         templateUrl: '../pages/vintage.html',
         controller: 'productController'
         }).
@@ -35,14 +23,22 @@ app.config(function ($routeProvider) {
         });
     }
 );
-app.controller('homeController', function($scope){
-    $scope.message="hello from first controlles"
-})
-app.controller('aboutController', function($scope){
-    $scope.message="hello from first controlles"
-})
-app.controller('contactController', function($scope){
-    $scope.message="hello from first controlles"
+app.controller('productController', function($scope){
+    $scope.showDetails = false;
+    $scope.showFilter = false;
+
+    $scope.showFilterModal = function (){
+        $scope.showFilter = true
+    }
+    $scope.showDetailsModal = function (){
+        $scope.showDetails = true
+    }
+    $scope.closeFilterModal = function (){
+        $scope.showFilter = false
+    }
+    $scope.closeDetailsModal = function (){
+        $scope.showDetails = false
+    }
 })
 
 const productCard = document.getElementById('productModal')

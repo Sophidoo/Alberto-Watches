@@ -18,6 +18,14 @@ app.config(function ($routeProvider) {
         templateUrl: '../pages/vintage.html',
         controller: 'productController'
         }).
+        when('/technology', {
+        templateUrl: '../pages/technology.html',
+        controller: 'productController'
+        }).
+        when('/gallery', {
+        templateUrl: '../pages/gallery.html',
+        controller: 'productController'
+        }).
         when('/sitemap', {
         templateUrl: '../pages/sitemap.html',
         controller: 'sitemapController'

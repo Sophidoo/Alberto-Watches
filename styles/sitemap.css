@@ -1,0 +1,23 @@
+.sitemap{
+    padding: 70px 5%;
+}
+.sitemap img{
+    width: 100%;
+}
+.smallsitemap{
+    display: none;
+    padding: 70px 2%;
+}
+.smallsitemap img{
+    width: 100%;
+}
+
+@media(max-width: 750px){
+    .sitemap{
+        display: none;
+
+    }
+    .smallsitemap{
+        display: flex;
+    }
+}

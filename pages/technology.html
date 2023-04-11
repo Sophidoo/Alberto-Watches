@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+
+		<link rel="stylesheet" href="../styles/index.css" />
+		<link rel="stylesheet" href="../styles/vintage.css" />
+		<link rel="stylesheet" href="../styles/responsiveness.css" />
+		<title>Product</title>
+	</head>
+	<body ng-controller = "productController">
+		<div class="search">
+			<input type="search" name="" id=""  placeholder="Search">
+		</div>
+		<div class="productfilter">
+			<p>All</p>
+			<p>Alarm Clocks</p>
+			<p>Analog Clocks</p>
+			<p>Cuckoo Clocks</p>
+			<p>Digital Clocks</p>
+			<p>Casual Watches</p>
+			<p>Chronograph Watches</p>
+			<p>Wall Clocks</p>
+			<p>Sports Watches</p>
+			<p>Fashion Watches</p>
+			<p>GMT Waches</p>
+			<p>Vintage Watches</p>
+			<p>Luxury Watches</p>
+			<p>Smart Watches</p>
+		</div>
+		<section class="vintageitems" >
+			
+			<div class="vintagecont">
+				<div class="rolexcont vincont">
+					<div class="header">
+						<h1 class="rolex">Rolex</h1>
+						<button  ng-click = "showFilterModal()"
+							><span class="material-symbols-outlined"> tune </span></button
+						>
+					</div>
+
+					<div class="rolexcrd" ng-click = "showDetailsModal()">
+						<div class="rolexitem">
+							<img src="../images/Vintage-Rolex-Watch.webp" alt="" />
+							<h3 >50's Swiss Wittnauer Chronograph </h3>
+							<p class="description"
+								>Late 1950's Swiss Wittnauer Chronograph. Original multicolored
+								dial looks fantastic. Applied markers and numerals.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img src="../images/rolexpercision.webp" alt="" />
+							<h3>1960's Enicar Chronograph Valjoux </h3>
+							<p class="description"
+								>1960's Swiss Enicar Chronograph. Original matte black colored
+								dial looks fantastic. Chrome applied markers. Dial is perfect.
+								Sharp looking matching hands.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/_1cD5VRdT7qeBgIRbTnZ0Mm2rrobJHl_yMCWM36Shwc/rs:fit:664:720:1/g:ce/aHR0cHM6Ly8xLmJw/LmJsb2dzcG90LmNv/bS8tVmsxR2Q0UzBE/RzQvVXBSQkJwS1d6/akkvQUFBQUFBQUFE/OXMvMVBUX0NJbmNV/Z2cvczE2MDAvVmlu/dGFnZS1Sb2xleC13/YXRjaGVzLVVLLUNv/bGxlY3Rpb24tZm9y/LU1lbi1GYXNoaW9u/KDMpLmpwZw"
+								alt=""
+							/>
+							<h3>Unique LeCoultre V&C Mystery Diamond Dial 14kt</h3>
+							<p class="description"
+								>60's LeCoultre Mystery Dial. Original silver tone dial with
+								thin chrome markers. Dial showing some unique aging.
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/gvnurdGDavPeNAHmcgAYhg8N4o8mF-6PHBbIshgjrMk/rs:fit:1024:683:1/g:ce/aHR0cHM6Ly93cC1h/d3MtbWVkaWEuczMt/YWNjZWxlcmF0ZS5h/bWF6b25hd3MuY29t/LzIwMTkvMDUvR1dB/OV9sb3QtNjgtMTAy/NHg2ODMuanBn"
+								alt=""
+							/>
+							<h3>1961 Hamilton K-475 Asymmetrical Automatic</h3>
+							<p class="description"
+								>Extremely hard to find Hamilton K-475. This model was produced
+								in 1960 and sold in 1961 with only 1300 in production. One of
+								the coolest & unique Hamilton automatics ever produced.
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/2k0G1hElzQSDd6Bc0O4eYw2l6_HXC9QNDeyl_AZd1js/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tYW5k/YndhdGNoZXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzEyL0lNR18wMzM5/LmpwZw"
+								alt=""
+							/>
+							<h3>30's Gruen Techni-Quadron Dr's Watch </h3>
+							<p class="description"
+								>1930’s hard to find Gruen Doctor’s watch. Unique designed duo
+								registers dial. The larger second register allowed a doctor to
+								see the seconds easier while taking a pulse. Original dial looks
+								awesome.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/-x7MG3nR2aopu6tzGCZSdFQeE0Ck20OJmNV0U4-9LEk/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/a2FsbWFyYW50aXF1/ZXMuY29tLmF1L3dw/LWNvbnRlbnQvdXBs/b2Fkcy9yb2xleC1w/cmVjaXNpb24tNzg0/Ni0xLmpwZw"
+								alt=""
+							/>
+							<h3>1967 Bulova Astronaut 214 Accutron </h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corporis alias, consectetur iste nesciunt illo ipsum ad tempora
+								molestias.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/6Y7VgX_keUKpl4S1qs7rc-knotbdNuG4N6AjV8UtJ1o/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/Ym9ic3dhdGNoZXMu/Y29tL3JvbGV4LWJs/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTQvMDEvdmludGFn/ZS1yb2xleC1zdWJt/YXJpbmVyLTE2ODAu/anBn"
+								alt=""
+							/>
+							<h3>30's Gruen Techni-Quadron Dr's Watch</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Minima unde fugiat iste ad sed, iure, tempora laboriosam, nobis
+								adipisci cum aspernatur beatae ducimus maiores quaerat!.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/_z-THissQ0IXcUdH48wyFARbr5-tQ8IvbL0YsaovdZM/rs:fit:1200:1000:1/g:ce/aHR0cHM6Ly95b3Vy/YXZlcmFnZWd1eXN0/eWxlLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNy8xMC9D/b3B5LW9mLVJvbGV4/X1N1Ym1hcmluZXJf/MTY4MF81RDNfMTg5/OC1FZGl0LmpwZw"
+								alt=""
+							/>
+							<h3>50's Swiss Wittnauer Chronograph </h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Molestias ipsum officiis enim ratione aperiam illo tempora
+								assumenda laudantium, sapiente doloribus. Suscipit quam veniam
+								provident laboriosam.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+					</div>
+				</div>
+				<div class="rolexcont guccicont">
+					<h1 class="rolex">Gucci</h1>
+					<div class="rolexcrd">
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/rP6C4hKYbSfw7Yc1mfGcA-gZlsVq8o6UeR_hNi9jN3I/rs:fit:1200:1125:1/g:ce/aHR0cHM6Ly9pbWcw/LmV0c3lzdGF0aWMu/Y29tLzAwMC8wLzU2/Nzk5NzUvaWxfZnVs/bHhmdWxsLjM0NzI2/NTM4OC5qcGc"
+								alt=""
+							/>
+							<h3>1971 Bulova Accutron Spaceview 214 </h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Repudiandae, officia. Saepe veritatis totam consequuntur
+								nesciunt recusandae voluptate placeat.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/3r4SGdjS7cPm6CpcM5tlJ3g8qG25re2JyF7m0qx3S4c/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pbWcw/LmV0c3lzdGF0aWMu/Y29tLzEwMS8wLzY0/MjUyNDYvaWxfZnVs/bHhmdWxsLjgzNjU5/MzIzNl84bnkxLmpw/Zw"
+								alt=""
+							/>
+							<h3>90's Gold Plated</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+								sapiente tempora quos ducimus culpa vero, in inventore ipsum
+								eveniet!</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/r3A2bPGpj48TsMV86iv70l1Hjso4VLwbOl2jngtmV7E/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzE3NzUyMzI4L3Iv/aWwvNTI1OGRmLzIx/ODQxOTQwNTEvaWxf/ZnVsbHhmdWxsLjIx/ODQxOTQwNTFfMjc1/aS5qcGc"
+								alt=""
+							/>
+							<h3>Ladies Gucci 9000L</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+								dolorem, corporis blanditiis temporibus voluptates quasi minima
+								unde sapiente!
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/ji43CS7H4ciZYThJEuZ7DXJWzaXUQBC55698kETl1bY/rs:fit:1200:800:1/g:ce/aHR0cHM6Ly93d3cu/dmludGFnZXRpbWV3/YXRjaGVzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOC8w/MS9EU0NfMDU4OC5q/cGc"
+								alt=""
+							/>
+							<h3>Retro Gucci Watch</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+								dignissimos eveniet fugit laudantium, quisquam quas libero
+								corrupti perspiciatis eos.
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/Bd5kJQff84_xQ61MuQ21XupAC2SZsz2yYu3k-nQMfcE/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FiL2Q0/Lzk0L2FiZDQ5NDU4/NmQ2MzE3ZDZmYjVm/NjM0Y2JhNTgwNGE2/LmpwZw"
+								alt=""
+							/>
+							<h3> Vintage Gucci Mondiale</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Tenetur amet officia delectus magni quibusdam recusandae?</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/tIdRf_-Actz82jHw4bAYISimAcUW5ybuSoGa1njJH-o/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzE3NzUyMzI4L3Iv/aWwvZWNkN2JmLzIz/ODAzNjA5NjAvaWxf/ZnVsbHhmdWxsLjIz/ODAzNjA5NjBfcm03/by5qcGc"
+								alt=""
+							/>
+							<h3>1980s Helbros Vintage</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corporis alias, consectetur iste nesciunt illo ipsum ad tempora
+								molestias.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/twWeIi3I3vbMyil4PuVgkSzIFP1E9HN5gFLpkLrCUz0/rs:fit:1200:1130:1/g:ce/aHR0cHM6Ly9jb250/ZW50LnByb3BlcnR5/cm9vbS5jb20vbGlz/dGluZ3Mvc2VsbGVy/cy9zZWxsZXI4ODg4/ODg5NDAvaW1hZ2Vz/L29yaWdpbWdzL2dv/bGQtcGxhdGVkLWd1/Y2NpLWJsYWNrLWxl/YXRoZXItcm91bmQt/MjYzbW0tZmFjZS12/aW50YWdlLXVuaXNl/eC13cmlzdC13YXRj/aC13aXRoLWJveC04/ODg4ODg5NDBfMjc5/MjAxNjEzMTM0NDM2/MzI0OTAuanBn"
+								alt=""
+							/>
+							<h3> Gold Plated Gucci Black Leather</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Minima unde fugiat iste ad sed, iure, tempora laboriosam, nobis
+								adipisci cum aspernatur beatae ducimus maiores quaerat!.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://images.unsplash.com/photo-1657900785844-b827171d3506?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+								alt=""
+							/>
+							<h3>62 Bulova Super Compressor</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Molestias ipsum officiis enim ratione aperiam illo tempora
+								assumenda laudantium.</p
+							>
+							<p class="price">$34,990</p>
+						</div>
+					</div>
+				</div>
+				<div class="rolexcont clockscont">
+					<h1 class="rolex">Clocks</h1>
+					<div class="rolexcrd">
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/nyQcQ1nrabUIsRoJ0omTNrUvyytpYTQ-kjE7d2bJr-w/rs:fit:1200:1200:1/g:ce/aHR0cDovL2kuZWJh/eWltZy5jb20vMDAv/JFQyZUMxNlpISkg4/RTlxU0VXeTIwQlJZ/MGxPYjJ1d35-/XzMyLkpQRw"
+								alt=""
+							/>
+							<h3> Antique Clock </h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Repudiandae, officia. Saepe veritatis totam consequuntur
+								nesciunt recusandae voluptate placeat.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/oXpOqD7wagbtIOPbFvKoTUvO1hff-AyQy7Qnj6TT9Wg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pMi53/cC5jb20vY2xvY2tp/bmZvLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxMi8xMC9J/TUdfMzc3My5qcGc"
+								alt=""
+							/>
+							<h3>Antique American Clock</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+								sapiente tempora quos ducimus culpa vero, in inventore ipsum
+								eveniet!</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/ThpvAXMIvdX2j_CnEnNPavkVl_WEdPyScIpyOL3j8l0/rs:fit:960:960:1/g:ce/aHR0cHM6Ly9hZTAx/LmFsaWNkbi5jb20v/a2YvSFRCMWRVYUdY/anp1SzFSalNzcGVx/NnppSFZYYXgvNDAt/NDUtNTBjbS0zRC1X/YWxsLUNsb2NrLUxh/cmdlLVdvb2Rlbi1W/aW50YWdlLVdhbGwt/Q2xvY2tzLVNpbGVu/dC1BbnRpcXVlLUJp/Zy1XYWxsLVdhdGNo/ZXMuanBn"
+								alt=""
+							/>
+							<h3>3D Wall Clock</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+								dolorem, corporis blanditiis temporibus voluptates quasi minima
+								unde sapiente!
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://imgs.search.brave.com/_2XGuLHlb9SbvSXzeoVbj4jzphhpYQXIrBPm9OWGrM0/rs:fit:1200:1200:1/g:ce/aHR0cDovL3MzLmFt/YXpvbmF3cy5jb20v/ZjAxLmp1c3RhbnN3/ZXIuY29tL2FudGlx/dWUlMjBjbG9jay5K/UEc"
+								alt=""
+							/>
+							<h3>Mantle Clock</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+								dignissimos eveniet fugit laudantium, quisquam quas libero
+								corrupti perspiciatis eos.
+							</p>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://images.unsplash.com/photo-1415604934674-561df9abf539?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+								alt=""
+							/>
+							<h3>Banjo Clock</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Tenetur amet officia delectus magni quibusdam recusandae?</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://images.unsplash.com/photo-1522339419089-3e2604cc8a9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80"
+								alt=""
+							/>
+							<h3>Tavern Clocks</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corporis alias, consectetur iste nesciunt illo ipsum ad tempora
+								molestias.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://images.unsplash.com/photo-1671627653131-b736eb7793d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+								alt=""
+							/>
+							<h3> Dwarf Clock</h3>
+							<p class="description"
+								>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Minima unde fugiat iste ad sed, iure, tempora laboriosam, nobis
+								adipisci cum aspernatur beatae ducimus maiores quaerat!.</p
+							>
+							<p class="price">$3,990</p>
+						</div>
+						<div class="rolexitem">
+							<img
+								src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+								alt=""
+							/>
+							<h3>Cuckoo Clocks</h3>
+							<p class="description"
+								>This German design is one of the most identifiable models. When
+								the clock struck a certain time, tiny doors beneath it would
+								open up and a small bird would slide out singing.</p
+							>
+							<p class="price">$2,990</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="detmodal" ng-show="showDetails">
+				<div class="modalitems">
+					<div class="modal-content">
+						<div class="modalleft">
+							<img src="../images/Vintage-Rolex-Watch.webp" alt="" />
+						</div>
+						<div class="modalright">
+							<span class="material-symbols-outlined close" ng-click="closeDetailsModal()"> close </span>
+							<h3 class="productname">50's Swiss Wittnauer </h3>
+							<p class="productdesc"
+								>Late 1950's Swiss Wittnauer Chronograph. Original multicolored
+								dial looks fantastic. Applied markers and numerals. Great hands.
+								35.5mm heavy all steel case with a screw back is in excellent
+								condition. 17 jewel manual wind Venus cal.188 chronograph
+								movement. Signed crown. $165 Fine leather strap. This is an
+								extremely nice chronograph. Nice size for him or her. Great
+								condition.</p
+							>
+							<p class="technology">Technology: <span>Nano-technology</span></p>
+							<p class="brand">Brand:<span>Rolex</span></p>
+							<p class="technology">Product: <span>Luxury</span></p>
+							<div class="modalprice">
+								<p>$<span>3,990</span></p>
+								<!-- <button>Check Out</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fmodal" id="filtermodal" ng-show="showFilter">
+				<div class="fmodalitems">
+					<div class="fmodal-content">
+						<div class="fmodalright">
+							<span class="material-symbols-outlined close" ng-click="closeFilterModal()"> close </span>
+							<h3 class="productname"
+								>Filter By
+								<span class="material-symbols-outlined"> filter_alt </span></h3
+							>
+							<div class="filterbtns">
+								<button>Vintage</button>
+								<button>Luxury</button>
+								<button>Technology</button>
+								<button>Smart-watches</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script src="../js/product.js"></script>
+	</body>
+</html>

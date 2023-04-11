@@ -18,6 +18,10 @@ app.config(function ($routeProvider) {
         templateUrl: '../pages/vintage.html',
         controller: 'productController'
         }).
+        when('/sitemap', {
+        templateUrl: '../pages/sitemap.html',
+        controller: 'sitemapController'
+        }).
         otherwise({
             redirectTo: '/'
         });

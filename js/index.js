@@ -30,6 +30,10 @@ app.config(function ($routeProvider) {
         templateUrl: '../pages/sitemap.html',
         controller: 'sitemapController'
         }).
+         when('/location', {
+        templateUrl: '../pages/location.html',
+        controller: 'locationController'
+        }).
         otherwise({
             redirectTo: '/'
         });

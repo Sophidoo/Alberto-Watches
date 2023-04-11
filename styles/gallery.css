@@ -18,7 +18,7 @@
     height: 600px;
     width: 100%;
     background-color: black;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/men-watches.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/men-watches.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,7 +99,7 @@
 
 .box:nth-child(1){
   
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/TAG-Heuer-Carrera-160-Years-Silver-Limited-Edition-Review-12.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/TAG-Heuer-Carrera-160-Years-Silver-Limited-Edition-Review-12.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -108,7 +108,7 @@
 
 .box:nth-child(2){
    
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Arnold-Son-watches.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/Arnold-Son-watches.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -117,7 +117,7 @@
 
 .box:nth-child(3){
   
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/close-up-of-mechanical-watch-WEJ713.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/close-up-of-mechanical-watch-WEJ713.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -126,7 +126,7 @@
 
 .box:nth-child(4){
   
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/close-up-hand-touching-smartwatch-health-app-screen-gadget-fitness-active-lifestyle-204633170.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/close-up-hand-touching-smartwatch-health-app-screen-gadget-fitness-active-lifestyle-204633170.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,7 +135,7 @@
 
 .box:nth-child(5){
     
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/photo-1497382706140-605ee76b3b55.jfif);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/photo-1497382706140-605ee76b3b55.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -144,7 +144,7 @@
 
 .box:nth-child(6){
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/istockphoto-157188129-612x612.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/istockphoto-157188129-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,7 +153,7 @@
 
 .box:nth-child(7){
     
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/istockphoto-518820558-612x612.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/istockphoto-518820558-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -162,7 +162,7 @@
 
 .box:nth-child(8){
   
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/gettyimages-90736844-612x612.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/gettyimages-90736844-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -171,7 +171,7 @@
 
 .box:nth-child(9){
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/istockphoto-533727990-612x612.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/istockphoto-533727990-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -179,7 +179,7 @@
 }
 
 .box:nth-child(10){
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/s-l1600.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/s-l1600.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -188,7 +188,7 @@
 
 .box:nth-child(11){
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/kids-smartwatch-2048px-2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/kids-smartwatch-2048px-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -197,7 +197,7 @@
 
 .box:nth-child(12){
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/images.jfif);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/images.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,7 +206,7 @@
 
 .box:nth-child(13){
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/sharp-realistic-photo-vintage-military-wrist-watches-camouflage-background-160723173.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/sharp-realistic-photo-vintage-military-wrist-watches-camouflage-background-160723173.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -215,7 +215,7 @@
 
 .box:nth-child(14){
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/images\ \(1\).jfif);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/images\ \(1\).jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -224,7 +224,7 @@
 
 .box:nth-child(15){
   
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/images\ \(2\).jfif);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/images\ \(2\).jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

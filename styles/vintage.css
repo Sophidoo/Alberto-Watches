@@ -125,7 +125,7 @@ body {
 
 
 .modal {
-	display: flex;
+	display: none;  /*Flex*/
 	background-color: rgba(22, 22, 22, 0.658);
 	width: 100%;
 	height: 100vh;
@@ -250,7 +250,7 @@ body {
 }
 
 .fmodal {
-	display: flex;
+	display: none;  /*flex*/
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(22, 22, 22, 0.658);

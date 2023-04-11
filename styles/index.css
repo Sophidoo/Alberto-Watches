@@ -1,5 +1,5 @@
 /** @format */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
 	margin: 0px;
 	padding: 0px;
@@ -8,7 +8,7 @@
 
 body {
 	background-color: whitesmoke;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-style: normal;
 }
 
@@ -27,9 +27,9 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 20;
+	position: sticky;
+	top: 0px;
+	z-index: 20;
 }
 
 nav ul {
@@ -50,8 +50,8 @@ nav ul li:hover {
 nav ul a {
 	font-size: 14px;
 	position: relative;
-    text-decoration: none;
-    color: rgb(33, 32, 32);
+	text-decoration: none;
+	color: rgb(33, 32, 32);
 	font-weight: 500;
 }
 nav ul a:hover {
@@ -59,10 +59,10 @@ nav ul a:hover {
 	cursor: pointer;
 	transition: 500ms;
 }
-nav span{
+nav span {
 	display: none !important;
 }
-.responsiveNav{
+.responsiveNav {
 	padding: 20px;
 	background-color: white;
 	position: fixed;
@@ -70,7 +70,6 @@ nav span{
 	left: 0px;
 	width: 300px;
 	padding-bottom: 40px;
-
 }
 .responsiveNav ul {
 	display: flex;
@@ -92,8 +91,8 @@ nav span{
 .responsiveNav ul a {
 	font-size: 14px;
 	position: relative;
-    text-decoration: none;
-    color: rgb(33, 32, 32);
+	text-decoration: none;
+	color: rgb(33, 32, 32);
 	font-weight: 500;
 }
 .responsiveNav ul a:hover {
@@ -101,24 +100,50 @@ nav span{
 	cursor: pointer;
 	transition: 500ms;
 }
-.responsiveNav span{
+.responsiveNav span {
 	display: none !important;
 }
-.visitorCount{
+.visitorCount {
 	display: flex;
 	column-gap: 10px;
 	align-items: center;
+	justify-content: flex-end;
+	/* background-color: blue; */
+	position: relative;
+	width: 15%;
 }
-.visitorCount .visitor{
+.visitorCount img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.visitor {
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	row-gap: 0px;
 	align-items: center;
+	justify-content: center;
 
+	color: rgb(32, 30, 30);
+	border: 2px solid rgb(172, 172, 172);
+	background-color: whitesmoke;
+	/* width: 70%; */
+	padding: 10px 10px;
+	height: 30px;
+	border-radius: 20px;
+	position: absolute;
+	top: -10px;
+	left: -5px;
+	font-size: 13px;
+
+	/* backdrop-filter: blur(10px); */
 }
-.visitorCount p{
-	font-size: 12px;
+
+.visitor h3 {
+	width: 100%;
+	font-weight: 500 !important;
 }
+
 /* .productModal {
 	position: absolute;
 	top: 35px;
@@ -215,7 +240,6 @@ nav span{
 	justify-content: space-between;
 	padding: 40px 8%;
 	height: 90vh;
-
 }
 .leftHero {
 	width: 50%;
@@ -227,10 +251,10 @@ nav span{
 	font-size: 75px;
 	line-height: 70px;
 	font-weight: 900;
-	
-	font-family: 'Roboto', sans-serif;
+
+	font-family: "Roboto", sans-serif;
 }
-.leftHero h1 span{
+.leftHero h1 span {
 	color: rgb(2, 72, 202);
 }
 .leftHero button {
@@ -306,77 +330,76 @@ nav span{
 	font-size: 14px;
 }
 
-
-@media(max-width: 1300px){
-	.hero{
-		padding:  40px 5%;
+@media (max-width: 1300px) {
+	.hero {
+		padding: 40px 5%;
 	}
-	.hero h1{
+	.hero h1 {
 		font-size: 60px;
 		line-height: 55px;
 	}
 }
-@media(max-width: 1090px){
-	.hero h1{
+@media (max-width: 1090px) {
+	.hero h1 {
 		font-size: 50px;
 		line-height: 50px;
 	}
-	.hero p{
+	.hero p {
 		font-size: 14px;
 		line-height: 20px;
 	}
-	.leftHero button{
+	.leftHero button {
 		padding: 10px 25px;
 	}
 }
-@media(max-width: 900px){
-	.hero{
+@media (max-width: 900px) {
+	.hero {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		padding-top: 100px;
 		row-gap: 40px;
 	}
-	.leftHero{
+	.leftHero {
 		flex-direction: column;
 		align-items: center;
 		width: 90%;
 	}
-	.rightHero{
+	.rightHero {
 		width: 70%;
 	}
 }
-@media(max-width: 750px){
-	nav ul{
+@media (max-width: 750px) {
+	nav ul {
 		display: none;
 	}
-	nav span{
+	nav span {
 		display: flex !important;
 	}
 }
-@media(max-width: 600px){
-	.leftHero h1{
+@media (max-width: 600px) {
+	.leftHero h1 {
 		font-size: 40px;
 		line-height: 40px;
 		width: 100%;
 	}
-	.leftHero p{
+	.leftHero p {
 		font-size: 13.5px;
 	}
 }
-@media(max-width: 500px){
-	.leftHero h1{
+@media (max-width: 500px) {
+	.leftHero h1 {
 		font-size: 35px;
 		line-height: 35px;
 	}
-	.leftHero p{
+	.leftHero p {
 		font-size: 13px;
 		width: 100%;
 	}
-	.rightHero{
+	.rightHero {
 		width: 100%;
 	}
-	.responsiveNav{
+	.responsiveNav {
 		width: 100%;
 	}
 }

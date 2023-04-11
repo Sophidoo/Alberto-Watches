@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
 </head>
-<body>
+<body  ng-controller = "navController">
     <nav onmouseout="hideAll()">
         <p>logo</p>
         <ul>
@@ -22,7 +22,21 @@
             <li>Gallery</li>
             <a href="#!/contact">Support</a>
         </ul>
+        <span class="material-symbols-outlined" ng-click="showResponsiveNav()">
+            menu
+            </span>
     </nav>
+    <div class="responsiveNav" ng-show = "showNav">
+        <ul>
+            <a href="#!/">Home</a>
+            <a href="#!/about">About Us</a>
+            <a href="#!/product">Products</a>
+            <li>Store Locator</li>
+            <li>Site Map</li>
+            <li>Gallery</li>
+            <a href="#!/contact">Support</a>
+        </ul>
+    </div>
 
 
     <div ng-view></div>

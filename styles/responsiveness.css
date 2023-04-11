@@ -1,20 +1,23 @@
+/** @format */
+
 @media (max-width: 768px) {
-  .rolexcrd {
-    grid-template-columns: repeat(3, 1fr
-    );
-  }
+	.rolexcrd {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media (max-width: 668px) {
-  .rolexcrd {
-    grid-template-columns: repeat(2, 1fr
-    );
-  }
+	.rolexcrd {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (max-width: 408px) {
-  .rolexcrd {
-    grid-template-columns: repeat(1, 1fr
-    );
+	.rolexcrd {
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+  .vintageitems {
+    padding: 50px 5%;
   }
 }

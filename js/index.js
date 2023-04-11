@@ -40,6 +40,17 @@ app.controller('productController', function($scope){
         $scope.showDetails = false
     }
 })
+app.controller('navController', function($scope){
+    $scope.showNav = false
+    
+    $scope.showResponsiveNav = function() {
+        if($scope.showNav){
+            $scope.showNav = false
+        }else{
+            $scope.showNav = true
+        }
+    }
+})
 
 const productCard = document.getElementById('productModal')
 const techCard = document.getElementById('techModal')

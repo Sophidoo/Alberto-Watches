@@ -25,6 +25,28 @@
     border-radius: 10px;
     margin-top: 100px;
 }
+.productfilter{
+	padding: 30px 5%;
+	display: flex;
+	justify-content: center;
+	row-gap: 12px;
+	column-gap: 10px;
+	flex-wrap: wrap;
+}
+.productfilter p{
+	padding: 5px 15px;
+	border: 2px solid rgb(193, 193, 193);
+	border-radius: 5px;
+	font-size: 13px;
+}
+.productfilter p:hover{
+	background-color: rgb(2, 72, 202);
+	border: 2px solid rgb(2, 72, 202);
+	transition: 500ms;
+	transition-timing-function: ease-in-out;
+	color: white;
+	cursor: pointer;
+}
 .search input:focus{
     border: 1px solid rgb(105, 105, 221);
 }
@@ -363,14 +385,25 @@ body {
 	.search input{
 		width: 70%;
 	}
+	.productfilter{
+		padding: 30px 2%;
+	}
+	.productfilter p{
+		font-size: 12px;
+		padding: 3px 5px;
+	}
 }
 @media(max-width: 500px){
 	.search{
-		height: 10vh;
+		height: 8vh;
 	}
 	.search input{
-		margin-top: 70px;
+		margin-top: 50px;
 		width: 90%;
-		font-size: 14px;
+		padding: 10px 10px;
+		font-size: 13px;
+	}
+	.productfilter{
+		padding-bottom: 10px;
 	}
 }

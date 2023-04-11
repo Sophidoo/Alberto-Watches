@@ -16,21 +16,25 @@
 		<link rel="stylesheet" href="../styles/responsiveness.css" />
 		<title>Product</title>
 	</head>
-	<body>
-		<section class="vintageitems">
+	<body ng-controller = "productController">
+		<div class="search">
+			<input type="search" name="" id=""  placeholder="Search">
+		</div>
+		<section class="vintageitems" >
+			
 			<div class="vintagecont">
 				<div class="rolexcont vincont">
 					<div class="header">
 						<h1 class="rolex">Rolex</h1>
-						<button
+						<button  ng-click = "showFilterModal()"
 							><span class="material-symbols-outlined"> tune </span></button
 						>
 					</div>
 
-					<div class="rolexcrd">
+					<div class="rolexcrd" ng-click = "showDetailsModal()">
 						<div class="rolexitem">
 							<img src="../images/Vintage-Rolex-Watch.webp" alt="" />
-							<h3>50's Swiss Wittnauer Chronograph </h3>
+							<h3 >50's Swiss Wittnauer Chronograph </h3>
 							<p class="description"
 								>Late 1950's Swiss Wittnauer Chronograph. Original multicolored
 								dial looks fantastic. Applied markers and numerals.</p
@@ -345,14 +349,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="modal">
+			<div class="modal" id="detmodal" ng-show="showDetails">
 				<div class="modalitems">
 					<div class="modal-content">
 						<div class="modalleft">
 							<img src="../images/Vintage-Rolex-Watch.webp" alt="" />
 						</div>
 						<div class="modalright">
-							<span class="material-symbols-outlined close"> close </span>
+							<span class="material-symbols-outlined close" ng-click="closeDetailsModal()"> close </span>
 							<h3 class="productname">50's Swiss Wittnauer </h3>
 							<p class="productdesc"
 								>Late 1950's Swiss Wittnauer Chronograph. Original multicolored
@@ -365,20 +369,21 @@
 							>
 							<p class="technology">Technology: <span>Nano-technology</span></p>
 							<p class="brand">Brand:<span>Rolex</span></p>
+							<p class="technology">Product: <span>Luxury</span></p>
 							<div class="modalprice">
 								<p>$<span>3,990</span></p>
-								<button>Check Out</button>
+								<!-- <button>Check Out</button> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="fmodal">
+			<div class="fmodal" id="filtermodal" ng-show="showFilter">
 				<div class="fmodalitems">
 					<div class="fmodal-content">
 						<div class="fmodalright">
-							<span class="material-symbols-outlined close"> close </span>
+							<span class="material-symbols-outlined close" ng-click="closeFilterModal()"> close </span>
 							<h3 class="productname"
 								>Filter By
 								<span class="material-symbols-outlined"> filter_alt </span></h3
@@ -394,8 +399,7 @@
 				</div>
 			</div>
 		</section>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-		<script src="../js/index.js"></script>
+		
+		<script src="../js/product.js"></script>
 	</body>
 </html>

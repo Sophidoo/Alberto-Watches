@@ -16,7 +16,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
 	</head>
 	<body ng-controller="navController">
-		<nav onmouseout="hideAll()">
+        <nav onmouseout="hideAll()">
+            <img src="../images/albert.png" alt="" />
 			<ul>
 				<a href="#!/">Home</a>
 				<a href="#!/about">About Us</a>
@@ -27,16 +28,13 @@
 				<a href="#!/gallery">Gallery</a>
 				<a href="#!/contact">Support</a>
 			</ul>
-			<span class="material-symbols-outlined" ng-click="showResponsiveNav()">
-				menu
-			</span>
-			<div class="visitorCount">
-				<img src="../images/albert.png" alt="" />
-				<div class="visitor">
-					<h3>visitors count: 2</h3>
-					<!-- <p>visitor count</p> -->
-				</div>
-			</div>
+            <div class="visitorcount">
+                <h3>visitors count: 2</h3>
+                <!-- <p>visitor count</p> -->
+            </div>
+            <span class="material-symbols-outlined" ng-click="showResponsiveNav()">
+                menu
+            </span>
 		</nav>
 		<div class="responsiveNav" ng-show="showNav">
 			<ul>

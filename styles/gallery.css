@@ -8,12 +8,6 @@
 }
 
 
-
-
-
-
-
-
 .cover{
     height: 600px;
     width: 100%;
@@ -286,7 +280,7 @@
     text-align: center;
 }
 
-.rcontainer .img{
+.img{
     width: 50%;
     height: max-content;
     /* padding: 80px 20px 20px 20px ; */
@@ -294,7 +288,7 @@
     border-radius: 10px;
 }
 
-.rcontainer .img img{
+.img img{
     width:100%;
     height: 90%;
     object-fit: cover;

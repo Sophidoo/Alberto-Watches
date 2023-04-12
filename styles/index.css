@@ -10,6 +10,7 @@ body {
 	background-color: whitesmoke;
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
+	position: relative;
 }
 
 /* .your-style {
@@ -105,7 +106,6 @@ nav span {
 	display: none !important;
 }
 .visitorcount {
-	
 	border: 2px solid rgb(172, 172, 172);
 	background-color: whitesmoke;
 	color: rgb(32, 30, 30);
@@ -144,104 +144,18 @@ nav img {
 	font-weight: 500 !important;
 }
 
-/* .productModal {
-	position: absolute;
-	top: 35px;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	z-index: 5;
-	width: 160px;
-	border-radius: 10px;
-	left: -100%;
-	box-shadow: 0px 0px 10px rgba(85, 85, 85, 0.249);
-	background-color: rgb(165, 221, 244);
-	padding: 10px 0;
-	display: none;
-}
-.productModal::before {
-	content: "";
-	background-color: rgb(165, 221, 244);
-	box-shadow: 0px 0px 10px rgba(85, 85, 85, 0.249);
-	width: 20px;
-	height: 10px;
-	position: absolute;
-	top: -10px;
-	left: 43%;
-	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-.productModal p {
-	padding: 10px 20px;
-	padding-right: 30px;
-	color: black;
-}
-.productModal p:hover {
-	background-color: white;
-	color: black;
-}
-.productModal a {
-	padding: 10px 20px;
-	padding-right: 30px;
-	color: black;
-    text-decoration: none;
-}
-.productModal a:hover {
-	background-color: white;
-	color: black;
-}
-.techModal {
-	position: absolute;
-	top: 35px;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	z-index: 5;
-	width: 160px;
-	border-radius: 10px;
-	left: -70%;
-	box-shadow: 0px 0px 10px rgba(85, 85, 85, 0.249);
-	background-color: rgb(165, 221, 244);
-	padding: 10px 0;
-	display: none;
-}
-.techModal::before {
-	content: "";
-	background-color: rgb(165, 221, 244);
-	box-shadow: 0px 0px 10px rgba(85, 85, 85, 0.249);
-	width: 20px;
-	height: 10px;
-	position: absolute;
-	top: -10px;
-	left: 43%;
-	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-.techModal p {
-	padding: 10px 20px;
-	padding-right: 30px;
-	color: black;
-}
-.techModal p:hover {
-	background-color: white;
-	color: black;
-}
-.techModal a {
-	padding: 10px 20px;
-	padding-right: 30px;
-	color: black;
-}
-.techModal a:hover {
-	background-color: white;
-	color: black;
-} */
-
 .hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	height: 85vh;
-	
-    background-image: linear-gradient(rgba(15, 15, 15, 0.959), rgba(32, 31, 31, 0.795)),url(../images/close-up-of-mechanical-watch-WEJ713.jpg);
+
+	background-image: linear-gradient(
+			rgba(15, 15, 15, 0.959),
+			rgba(32, 31, 31, 0.795)
+		),
+		url(../images/close-up-of-mechanical-watch-WEJ713.jpg);
 	background-size: cover;
 	background-position: top;
 }
@@ -258,7 +172,7 @@ nav img {
 	font-size: 75px;
 	line-height: 70px;
 	font-weight: 900;
-    font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 }
 .leftHero h1 span {
 	color: rgb(2, 72, 202);
@@ -337,6 +251,29 @@ nav img {
 	font-size: 14px;
 }
 
+.timercont {
+	position: fixed;
+	
+	bottom: 80px;
+	right: 100px;
+	background-color: rgb(36, 34, 34);
+	z-index: 3;
+	border-radius: 20px;
+	color: rgb(160, 155, 155);
+	bottom: 80px;
+	right: 100px;
+
+	width: 6%;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.timer {
+	position: absolute;
+}
+
 @media (max-width: 1300px) {
 	.hero h1 {
 		font-size: 60px;
@@ -379,10 +316,10 @@ nav img {
 	nav span {
 		display: flex !important;
 	}
-	.leftHero{
+	.leftHero {
 		padding: 0px 3%;
 	}
-	.leftHero p{
+	.leftHero p {
 		width: 100%;
 	}
 }
@@ -395,7 +332,7 @@ nav img {
 	.leftHero p {
 		font-size: 13.5px;
 	}
-	.visitor{
+	.visitor {
 		width: fit-content;
 	}
 }

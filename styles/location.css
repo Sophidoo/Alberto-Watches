@@ -32,10 +32,28 @@
   width: 25%;
   height: inherit;
   background-color: rgb(248, 248, 248);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(14, 6, 6);
+  scrollbar-width: thin;
 }
 
-.storelocationrght {
-  /* background-color: blue; */
+.storebodytxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: 50px auto;
+}
+
+.storebodytxt p {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(59, 58, 58);
+}
+
+.storelocationrght{
   width: 75%;
 }
 
@@ -45,8 +63,10 @@
 
 .locaationadres {
   display: flex;
-  padding: 20px 16px;
-  
+  justify-content: center;
+  padding: 25px 20px;
+  border-bottom: 2px solid rgb(224, 224, 224);
+  /* background-color: aqua; */
 }
 
 .locationtexts {
@@ -73,7 +93,7 @@
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
+  'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48

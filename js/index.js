@@ -1,4 +1,5 @@
 
+
 var app = angular.module('myApp', ['ngRoute'])
 
 
@@ -595,7 +596,7 @@ app.controller('techController', function($scope){
 })
 
 // Functions controlling the modal for the responsive navbar
-app.controller('navController', function($scope){
+app.controller('navController', function($scope, $window, $http){
     $scope.showNav = false
     
     $scope.showResponsiveNav = function() {
@@ -605,4 +606,25 @@ app.controller('navController', function($scope){
             $scope.showNav = true
         }
     }
+
+    $scope.date = new Date().toDateString()
+    $scope.time = new Date().toLocaleTimeString()
+    
+    if ($window.navigator.geolocation) {
+        $window.navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+
+          // send reverse geocoding request
+          $http.get('https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=' + latitude + '&lon=' + longitude)
+            .then(function(response) {
+              $scope.location = response.data.display_name;
+            })
+            .catch(function(error) {
+              console.log(error);
+            });
+        });
+      } else {
+        $scope.location = "Geolocation is not supported by this browser.";
+      }
 })

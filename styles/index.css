@@ -66,9 +66,10 @@ nav span {
 	padding: 20px;
 	background-color: white;
 	position: fixed;
-	top: 80px;
-	left: 0px;
+	top: 100px;
+	right: 0px;
 	width: 300px;
+	z-index: 20;
 	padding-bottom: 40px;
 }
 .responsiveNav ul {
@@ -103,23 +104,22 @@ nav span {
 .responsiveNav span {
 	display: none !important;
 }
-.visitorCount {
-	display: flex;
-	column-gap: 10px;
-	align-items: center;
-	justify-content: flex-end;
-	/* background-color: blue; */
-	position: relative;
-	width: 15%;
+.visitorcount {
+	
+	border: 2px solid rgb(172, 172, 172);
+	background-color: whitesmoke;
+	color: rgb(32, 30, 30);
+	font-size: 13px;
+	padding: 6px 10px;
+	border-radius: 20px;
 }
-.visitorCount img {
+nav img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 }
 .visitor {
 	display: flex;
-	/* flex-direction: column; */
 	row-gap: 0px;
 	align-items: center;
 	justify-content: center;
@@ -127,7 +127,6 @@ nav span {
 	color: rgb(32, 30, 30);
 	border: 2px solid rgb(172, 172, 172);
 	background-color: whitesmoke;
-	/* width: 70%; */
 	padding: 10px 10px;
 	height: 30px;
 	border-radius: 20px;
@@ -135,12 +134,13 @@ nav span {
 	top: -10px;
 	left: -5px;
 	font-size: 13px;
+	width: fit-content;
 
 	/* backdrop-filter: blur(10px); */
 }
 
 .visitor h3 {
-	width: 100%;
+	width: fit-content;
 	font-weight: 500 !important;
 }
 
@@ -237,30 +237,37 @@ nav span {
 .hero {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 40px 8%;
-	height: 90vh;
+	justify-content: center;
+	text-align: center;
+	height: 85vh;
+	
+    background-image: linear-gradient(rgba(15, 15, 15, 0.959), rgba(32, 31, 31, 0.795)),url(../images/close-up-of-mechanical-watch-WEJ713.jpg);
+	background-size: cover;
+	background-position: top;
 }
 .leftHero {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
+	text-align: center;
+	align-items: center;
+	color: white;
 }
 .leftHero h1 {
 	font-size: 75px;
 	line-height: 70px;
 	font-weight: 900;
-
-	font-family: "Roboto", sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 .leftHero h1 span {
 	color: rgb(2, 72, 202);
 }
 .leftHero button {
-	padding: 15px 30px;
-	background-color: #0248ca;
-	border: 2px solid white;
+	padding: 15px 40px;
+	background-color: #0043c1;
+	/* border: 2px solid white; */
+	border: 0px;
 	font-weight: 500;
 	color: white;
 	border-radius: 10px;
@@ -275,9 +282,9 @@ nav span {
 	transition-timing-function: ease-in;
 }
 .leftHero p {
-	color: rgb(65, 65, 65);
+	color: rgb(226, 226, 226);
 	font-size: 15px;
-	width: 95%;
+	width: 70%;
 	line-height: 22px;
 }
 .rightHero {
@@ -331,9 +338,6 @@ nav span {
 }
 
 @media (max-width: 1300px) {
-	.hero {
-		padding: 40px 5%;
-	}
 	.hero h1 {
 		font-size: 60px;
 		line-height: 55px;
@@ -357,24 +361,29 @@ nav span {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		padding-top: 100px;
 		row-gap: 40px;
 	}
 	.leftHero {
 		flex-direction: column;
 		align-items: center;
-		width: 90%;
+		width: 100%;
 	}
 	.rightHero {
 		width: 70%;
 	}
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	nav ul {
 		display: none;
 	}
 	nav span {
 		display: flex !important;
+	}
+	.leftHero{
+		padding: 0px 3%;
+	}
+	.leftHero p{
+		width: 100%;
 	}
 }
 @media (max-width: 600px) {
@@ -385,6 +394,9 @@ nav span {
 	}
 	.leftHero p {
 		font-size: 13.5px;
+	}
+	.visitor{
+		width: fit-content;
 	}
 }
 @media (max-width: 500px) {

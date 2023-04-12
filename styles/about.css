@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@600;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@600;700&display=swap');
 
 *{
     margin: 0px;
@@ -20,21 +20,32 @@ body{
     flex-direction: column;
     row-gap: 80px;
 }
-.aboutHero .heading{
+.headingWrapper{
+    background-image: linear-gradient(rgba(15, 15, 15, 0.959), rgba(32, 31, 31, 0.795)), url("../images/mature-clockmaster-is-fixing-old-watch-customer-his-busy-repairing-workshop.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.headingWrapper .heading{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    height: 60vh;
+    color: white;
     row-gap: 4px;
 }
-.aboutHero .heading h1{
+.headingWrapper .heading h1{
+    font-weight: 800;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 70px;
+    
+  font-family: 'Playfair Display', serif;
 }
-.aboutHero .heading p{
+.headingWrapper .heading p{
     width: 55%;
-    color: rgb(94, 94, 94);
-    font-size: 15px;
+    color: rgb(214, 214, 214);
+    font-size: 17px;
 }
 .stat{
     background-image: url('../images/mature-clockmaster-is-fixing-old-watch-customer-his-busy-repairing-workshop.jpg');
@@ -142,6 +153,7 @@ body{
 }
 .teamWrapper{
     padding: 80px 10%;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,8 +202,12 @@ body{
     font-size: 14px;
 }
 @media(max-width: 1300px){
-    .aboutHero .heading p{
+    .headingWrapper .heading p{
         width: 70%;
+        font-size: 16px;
+    }
+    .headingWrapper .heading h1{
+        font-size: 60px;
     }
     .valuesHeading{
         width: 80%;
@@ -212,8 +228,15 @@ body{
         width: 80%;
         font-size: 14px;
     }
-    .aboutHero .heading h1{
-        font-size: 38px;
+    .headingWrapper .heading{
+        padding: 0px 3%;
+    }
+    .headingWrapper .heading h1{
+        font-size: 50px;
+    }
+    .headingWrapper .heading P{
+        font-size: 14px;
+        width: 80%;
     }
     .valuesHeading{
         width: 80%;
@@ -261,11 +284,12 @@ body{
     }
 }
 @media(max-width: 750px){
-    .aboutHero .heading p{
+    .headingWrapper .heading p{
         width: 100%;
     }
-    .aboutHero .heading h1{
-        font-size: 35px;
+    .headingWrapper .heading h1{
+        font-size: 38px;
+        line-height: 40px;
     }
     .statWrapper{
         flex-wrap: wrap;

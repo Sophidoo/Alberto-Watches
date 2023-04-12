@@ -22,7 +22,7 @@ app.config(function ($routeProvider) {
         }).
         when('/technology', {
         templateUrl: '../pages/technology.html',
-        controller: 'techController'
+        controller: 'productController'
         }).
         when('/gallery', {
         templateUrl: '../pages/gallery.html',

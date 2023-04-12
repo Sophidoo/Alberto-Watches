@@ -237,30 +237,37 @@ nav img {
 .hero {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 40px 8%;
-	height: 90vh;
+	justify-content: center;
+	text-align: center;
+	height: 85vh;
+	
+    background-image: linear-gradient(rgba(15, 15, 15, 0.959), rgba(32, 31, 31, 0.795)),url(../images/close-up-of-mechanical-watch-WEJ713.jpg);
+	background-size: cover;
+	background-position: top;
 }
 .leftHero {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	row-gap: 10px;
+	text-align: center;
+	align-items: center;
+	color: white;
 }
 .leftHero h1 {
 	font-size: 75px;
 	line-height: 70px;
 	font-weight: 900;
-
-	font-family: "Roboto", sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 .leftHero h1 span {
 	color: rgb(2, 72, 202);
 }
 .leftHero button {
-	padding: 15px 30px;
-	background-color: #0248ca;
-	border: 2px solid white;
+	padding: 15px 40px;
+	background-color: #0043c1;
+	/* border: 2px solid white; */
+	border: 0px;
 	font-weight: 500;
 	color: white;
 	border-radius: 10px;
@@ -275,9 +282,9 @@ nav img {
 	transition-timing-function: ease-in;
 }
 .leftHero p {
-	color: rgb(65, 65, 65);
+	color: rgb(226, 226, 226);
 	font-size: 15px;
-	width: 95%;
+	width: 70%;
 	line-height: 22px;
 }
 .rightHero {
@@ -331,9 +338,6 @@ nav img {
 }
 
 @media (max-width: 1300px) {
-	.hero {
-		padding: 40px 5%;
-	}
 	.hero h1 {
 		font-size: 60px;
 		line-height: 55px;
@@ -357,13 +361,12 @@ nav img {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		padding-top: 100px;
 		row-gap: 40px;
 	}
 	.leftHero {
 		flex-direction: column;
 		align-items: center;
-		width: 90%;
+		width: 100%;
 	}
 	.rightHero {
 		width: 70%;
@@ -375,6 +378,12 @@ nav img {
 	}
 	nav span {
 		display: flex !important;
+	}
+	.leftHero{
+		padding: 0px 3%;
+	}
+	.leftHero p{
+		width: 100%;
 	}
 }
 @media (max-width: 600px) {

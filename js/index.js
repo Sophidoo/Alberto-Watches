@@ -1,5 +1,7 @@
 var app = angular.module('myApp', ['ngRoute'])
 
+
+// Routing With Angular js
 app.config(function ($routeProvider) {
     $routeProvider.
         when('/', {
@@ -20,11 +22,11 @@ app.config(function ($routeProvider) {
         }).
         when('/technology', {
         templateUrl: '../pages/technology.html',
-        controller: 'productController'
+        controller: 'techController'
         }).
         when('/gallery', {
         templateUrl: '../pages/gallery.html',
-        controller: 'productController'
+        controller: 'galleryController'
         }).
         when('/sitemap', {
         templateUrl: '../pages/sitemap.html',
@@ -39,23 +41,20 @@ app.config(function ($routeProvider) {
         });
     }
 );
+
+// Functions controlling the modal for product details
 app.controller('productController', function($scope){
     $scope.showDetails = false;
     $scope.showFilter = false;
-
-    $scope.showFilterModal = function (){
-        $scope.showFilter = true
-    }
     $scope.showDetailsModal = function (){
         $scope.showDetails = true
-    }
-    $scope.closeFilterModal = function (){
-        $scope.showFilter = false
     }
     $scope.closeDetailsModal = function (){
         $scope.showDetails = false
     }
 })
+
+// Functions controlling the modal for the responsive navbar
 app.controller('navController', function($scope){
     $scope.showNav = false
     

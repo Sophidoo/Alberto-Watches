@@ -309,7 +309,7 @@ nav img {
 		width: 70%;
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 868px) {
 	nav ul {
 		display: none;
 	}

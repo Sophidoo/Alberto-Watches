@@ -322,6 +322,9 @@ nav img {
 	.leftHero p {
 		width: 100%;
 	}
+	.timercont {
+		width: 20%;
+	}
 }
 @media (max-width: 600px) {
 	.leftHero h1 {
